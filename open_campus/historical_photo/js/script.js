@@ -12,4 +12,9 @@ var gsi_1960th = new L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/ort_old10
   attribution: "国土地理院"
 }).addTo(map);
 
-L.control.sideBySide(ggl_present, gsi_1960th).addTo(map);
+var gsi_1970th = new L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/gazo1/{z}/{x}/{y}.jpg', {
+  attribution: "国土地理院"
+}).addTo(map);
+
+
+L.control.sideBySide(ggl_present, gsi_1970th).addTo(map);
